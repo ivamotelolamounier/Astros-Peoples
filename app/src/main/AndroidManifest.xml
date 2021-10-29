@@ -2,11 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ivamotelo.astropeoples">
 
+    <!-- TODO: 002 - Incluir a permisão de internet -->
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <!-- A partir do android 9 - pies, NÂO SE PERMITE TRAFEGO HTTP, apenas HTTPS -->
+    <!-- então utiliza-se o recurso "android:usesCleartextTraffic="true"  para autorizar explicitamente -->
+    <!-- o tráfego de http://api.open-notify.org/astros.json -->
+
     <application
         android:allowBackup="true"
+        android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"

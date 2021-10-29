@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Astro Peoples</string>
+    <string name="load">Carregar</string>
 </resources>

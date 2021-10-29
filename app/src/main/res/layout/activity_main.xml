@@ -31,7 +31,7 @@
         <!-- TODO: 006 - Incluir um botão, TextView, ProgressBar para carregar os dados -->
         <Button
             android:id="@+id/button_load_data"
-            android:text="Carregar"
+            android:text="@string/load"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="32dp"
             android:layout_width="match_parent"
